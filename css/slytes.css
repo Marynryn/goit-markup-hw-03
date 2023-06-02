@@ -166,7 +166,18 @@ padding-bottom: 120px;
     
 }
 .features-title {}
-.visually-hidden {display: none;}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
     
 
 .features-item
@@ -218,9 +229,7 @@ gap: 24px;
 background-color:var(--footer-text-color);
 
 }
-.about-us-item {
-width: calc((100% - 72px)/3);
-}
+
 
 .team-title {
 font-weight: 700;
@@ -268,9 +277,6 @@ background-color: var(--main-title-color);
 padding: 100px 0;
 }
 .footer-container{
-
-display: flex;
-flex-direction: column;  
 
 }
 
